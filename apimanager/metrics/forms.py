@@ -2,7 +2,7 @@
 """
 Forms of metrics app
 """
-
+import traceback
 from django import forms
 from django.conf import settings
 from datetime import date
@@ -244,7 +244,6 @@ class CustomSummaryForm(forms.Form):
     def __init__(self, *args, **kwargs):
         kwargs.setdefault('label_suffix', '')
         super(CustomSummaryForm, self).__init__(*args, **kwargs)
-
 
 class MetricsSummaryForm(forms.Form):
     to_date = forms.DateTimeField(
