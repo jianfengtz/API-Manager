@@ -16,6 +16,7 @@ from django.views.generic import TemplateView
 from obp.api import API, APIError
 from .forms import APIMetricsForm, ConnectorMetricsForm, MetricsSummaryForm, CustomSummaryForm
 from pylab import *
+from .models import ApiCaches
 try:
     # Python 2
     import cStringIO
